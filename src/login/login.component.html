@@ -1,0 +1,12 @@
+<form [formGroup]="loginFormGroup">
+  <div class="userNameId">
+    User Name : <input type="text" formControlName="userName">
+  </div>
+  <div>
+    Password : <input type="text" formControlName="password">
+  </div>
+  <div>
+    <button type="button" (click)="login()"> login </button>
+  </div>
+  {{loginFormGroup.valid}}
+</form>
