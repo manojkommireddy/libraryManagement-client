@@ -6,20 +6,25 @@ import { AppComponent } from './app.component';
 import {LoginComponent} from '../login/login.component';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {HomeComponent} from '../home/home.component';
+import {EntertainmentComponent} from "../entertainment/entertainment.component";
+import {HttpClient, HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    HomeComponent
+    HomeComponent,
+    EntertainmentComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
