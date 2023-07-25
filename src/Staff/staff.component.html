@@ -1,0 +1,36 @@
+<form [formGroup]="staffFormGroup">
+  <h1>Please provide the Staff Details</h1>
+  <div class="userNameId">
+    FirstName : <input type="text" formControlName="firstName">
+  </div>
+  <div>
+    LastName : <input type="text" formControlName="lastName">
+  </div>
+  <div>
+    Username : <input type="text" formControlName="userName">
+  </div>
+  <div>
+    Password : <input type="text" formControlName="password">
+  </div>
+  <div>
+    Email : <input type="text" formControlName="email">
+  </div>
+  <div>
+    PhoneNumber : <input type="number" formControlName="phoneNumber">
+  </div>
+  <div>
+    Role : <input type="text" formControlName="role">
+  </div>
+  <div>
+    Salary : <input type="number" formControlName="salary">
+  </div>
+  <div>
+    HireDate : <input type="text" formControlName="hireDate">
+  </div>
+  <div>
+    ResignDate : <input type="text" formControlName="resignDate">
+  </div>
+  <div>
+    <button type="Submit" (click)="addStaff(staffFormGroup.value)"> Enter </button>
+  </div>
+</form>
