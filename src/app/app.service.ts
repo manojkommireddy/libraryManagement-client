@@ -11,6 +11,11 @@ export class AppService {
   constructor(private httpClient: HttpClient) {
   }
 
+  addStaff(staff: any) {
+    let staffDetails = [];
+    staffDetails.push(staff)
+    this.httpClient.post(this.apiUrl+'/saveAllStaffDetails',staffDetails).subscribe();
+  }
   addEntertainment(entertainment: any) {
     let entertainments = [];
     entertainments.push(entertainment);
