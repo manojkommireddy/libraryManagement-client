@@ -18,4 +18,9 @@ export class AppService {
     entertainments.push(entertainment);
     this.httpClient.post(this.apiUrl+'/saveEntertainments', entertainments).subscribe();
   }
+  addBooks(book:any){
+    let books=[];
+    books.push(book);
+    this.httpClient.post(this.apiUrl+'/saveBooks',books).subscribe();
+  }
 }
