@@ -1,0 +1,21 @@
+<form [formGroup]="entertainmentFormGroup">
+ <div>
+   Name : <input type="text" formControlName="name">
+ </div>
+  <div>
+    Type: <input type="text" formControlName="type">
+  </div>
+  <div>
+    Price: <input type="number" formControlName="price">
+  </div>
+  <div>
+    Rent: <input type="number" formControlName="rent">
+  </div>
+  <div>
+    Available: <input type="radio" id="yes" value="true" formControlName="available">
+    <label for="yes">Yes</label>
+    <input type="radio" id="no" value="false" formControlName="available">
+    <label for="no">No</label>
+  </div>
+  <button type="submit" (click)="addEntertainment(entertainmentFormGroup.value)">Submit</button>
+</form>

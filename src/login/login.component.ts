@@ -7,6 +7,7 @@ import {FormControl, FormGroup, Validators} from '@angular/forms';
   styleUrls: ['./login.component.less']
 })
 export class LoginComponent {
+
   // @ts-ignore
   loginFormGroup : FormGroup;
 

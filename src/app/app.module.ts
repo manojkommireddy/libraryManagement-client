@@ -6,8 +6,9 @@ import { AppComponent } from './app.component';
 import {LoginComponent} from '../login/login.component';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {HomeComponent} from '../home/home.component';
+import {EntertainmentComponent} from "../entertainment/entertainment.component";
+import {HttpClient, HttpClientModule} from "@angular/common/http";
 import {BooksComponent} from "../books/books.component";
-import {HttpClientModule} from "@angular/common/http";
 
 // @ts-ignore
 @NgModule({
@@ -15,6 +16,7 @@ import {HttpClientModule} from "@angular/common/http";
     AppComponent,
     LoginComponent,
     HomeComponent,
+    EntertainmentComponent
     BooksComponent
   ],
   imports: [
@@ -24,7 +26,8 @@ import {HttpClientModule} from "@angular/common/http";
     ReactiveFormsModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
