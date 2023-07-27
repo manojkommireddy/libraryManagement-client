@@ -1,0 +1,36 @@
+<form [formGroup]="booksFormGroup">
+  <div class="userNameId">
+    Book Name : <input type="text" formControlName="name">
+  </div>
+  <div>
+    Author: <input type="text" formControlName="author">
+  </div>
+  <div>
+    Price: <input type="text" formControlName="price">
+  </div>
+  <div>
+    Rent: <input type="text" formControlName="rent">
+  </div>
+  <div>
+    Genre : <input type="text" formControlName="genre">
+  </div>
+
+
+  <ul>
+    <li>
+      <input type="radio" ng-model="color.name" value="red">
+      <a routerLink="/login" routerLinkActive="active">Login</a>
+    </li>
+    <li>
+      <input type="radio" ng-model="color.name" value="blue">
+      <a routerLink="/home" routerLinkActive="active">Home</a>
+    </li>
+    <li>
+      <input type="radio" ng-model="color.name" value="yellow">
+      <a routerLink="/books" routerLinkActive="active">Books</a>
+    </li>
+  </ul>
+  <div>
+    <button type="button" (click)="addBooks(booksFormGroup.value)">submit</button>
+  </div>
+</form>
