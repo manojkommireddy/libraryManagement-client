@@ -1,7 +1,5 @@
 import {Injectable} from "@angular/core";
 import {HttpClient} from "@angular/common/http";
-import {Observable} from "rxjs";
-
 
 @Injectable({
   providedIn: 'root'
@@ -22,5 +20,10 @@ export class AppService {
     let books=[];
     books.push(book);
     this.httpClient.post(this.apiUrl+'/saveBooks',books).subscribe();
+  }
+  addUser(user :any){
+    let users=[];
+    users.push(user);
+    this.httpClient.post(this.apiUrl+'/createUsers',users).subscribe();
   }
 }

@@ -1,0 +1,30 @@
+<form [formGroup]="userFormGroup">
+  <div>
+    <h1>Please enter your details</h1>
+  </div>
+  <div class="firstNameId">
+    First Name : <input type="text" formControlName="firstName">
+  </div>
+  <div class="lastNameId">
+    Last Name : <input type="text" formControlName="lastName">
+  </div>
+  <div class="userNameId">
+    User Name : <input type="text" formControlName="userName">
+  </div>
+  <div>
+    Password : <input type="text" formControlName="password">
+  </div>
+  <div>
+    Email : <input type="text" formControlName="email">
+  </div>
+  <div>
+    Phone Number : <input type="text" formControlName="phoneNumber">
+  </div>
+  <div>
+    Start Date : <input type="text" formControlName="startDate">
+  </div>
+  <div>
+    End Date : <input type="text" formControlName="endDate">
+  </div>
+  <button type="submit" (click)="addUser(userFormGroup.value)">Submit</button>
+</form>
